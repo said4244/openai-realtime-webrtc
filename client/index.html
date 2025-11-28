@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>OpenAI Realtime Speech</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <div class="container">
+    <h1>OpenAI Realtime Speech</h1>
+    
+    <div class="status-container">
+      <div id="status">Ready to start</div>
+    </div>
+    
+    <div class="controls">
+      <button id="startBtn">Start Conversation</button>
+      <button id="stopBtn" disabled>End Conversation</button>
+    </div>
+    
+    <div class="transcript-container">
+      <h2>Transcript</h2>
+      <div id="transcript"></div>
+    </div>
+    
+    <div class="indicators">
+      <div id="userSpeaking" class="indicator">
+        <span class="dot"></span>
+        <span class="label">You</span>
+      </div>
+      <div id="aiSpeaking" class="indicator">
+        <span class="dot"></span>
+        <span class="label">AI</span>
+      </div>
+    </div>
+  </div>
+  
+  <script src="script.js"></script>
+</body>
+</html>
