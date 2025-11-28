@@ -1,0 +1,149 @@
+body {
+    font-family: 'Arial', sans-serif;
+    line-height: 1.6;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+    color: #333;
+  }
+  
+  .container {
+    max-width: 800px;
+    margin: 0 auto;
+    background-color: white;
+    padding: 30px;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0, 0, 0, 0.1);
+  }
+  
+  h1 {
+    text-align: center;
+    margin-bottom: 30px;
+    color: #2d3748;
+  }
+  
+  .status-container {
+    background-color: #edf2f7;
+    padding: 15px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+  }
+  
+  #status {
+    text-align: center;
+    font-weight: bold;
+  }
+  
+  .controls {
+    display: flex;
+    gap: 10px;
+    justify-content: center;
+    margin-bottom: 30px;
+  }
+  
+  button {
+    padding: 12px 24px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: bold;
+    transition: background-color 0.3s;
+  }
+  
+  #startBtn {
+    background-color: #4299e1;
+    color: white;
+  }
+  
+  #startBtn:hover {
+    background-color: #3182ce;
+  }
+  
+  #stopBtn {
+    background-color: #f56565;
+    color: white;
+  }
+  
+  #stopBtn:hover {
+    background-color: #e53e3e;
+  }
+  
+  button:disabled {
+    background-color: #a0aec0;
+    cursor: not-allowed;
+  }
+  
+  .transcript-container {
+    background-color: #f5f5f5;
+    padding: 20px;
+    border-radius: 8px;
+    margin-bottom: 20px;
+    min-height: 200px;
+    max-height: 400px;
+    overflow-y: auto;
+  }
+  
+  #transcript {
+    white-space: pre-wrap;
+  }
+  
+  .transcript-user {
+    color: #3182ce;
+    margin-bottom: 10px;
+  }
+  
+  .transcript-ai {
+    color: #38a169;
+    margin-bottom: 10px;
+  }
+  
+  .indicators {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+  }
+  
+  .indicator {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+  }
+  
+  .dot {
+    width: 12px;
+    height: 12px;
+    border-radius: 50%;
+    background-color: #cbd5e0;
+  }
+  
+  .active {
+    animation: pulse 1.5s infinite;
+  }
+  
+  #userSpeaking .active {
+    background-color: #3182ce;
+  }
+  
+  #aiSpeaking .active {
+    background-color: #38a169;
+  }
+  
+  .label {
+    font-size: 14px;
+    font-weight: bold;
+  }
+  
+  @keyframes pulse {
+    0% {
+      transform: scale(1);
+      opacity: 1;
+    }
+    50% {
+      transform: scale(1.2);
+      opacity: 0.7;
+    }
+    100% {
+      transform: scale(1);
+      opacity: 1;
+    }
+  }
